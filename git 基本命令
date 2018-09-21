@@ -1,0 +1,35 @@
+配置Git
+
+一开始我在公司git上提交代码。
+IDE里显示的作者一直是unknown
+后来我发现我的git config配置似乎没有配置好
+
+
+=================================================================
+$ git config --global user.name "rucunchun"
+$ git config --global user.email rechun1102@gmail.com
+=================================================================
+
+
+要对现有的某个项目开始用 Git 管理
+$ git init
+
+检查当前文件状态
+$ git status 
+
+查看尚未暂存的文件更新了哪些部分，不加参数直接输入 
+$ git diff
+
+查看提交历史
+$ git log
+
+提交历史有时候会很长，在英文状态下按q就可以退出
+
+取消已经暂存的文件
+$ git reset HEAD <file>...
+
+推送数据到远程仓库
+$ git push origin master
+
+自动补全
+$ git ‘Auto-Complete’ + Tab键2次
